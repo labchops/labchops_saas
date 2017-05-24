@@ -7,9 +7,11 @@ class ContactsController < ApplicationController
         @contact = Contact.new(contact_params)
         
         if @contact.save
-            redirect_to new_contact_path, notice: "Successful :)"
+            flash[:success] = 'Message sent homie....'
+            redirect_to new_contact_path #, notice: "Successful :)"
         else
-            redirect_to new_contact_path, notice: "What you trying to do bruh???"
+            flash[:error] = 'What you trying to do bruh???'
+            redirect_to new_contact_path  #, notice: "What you trying to do bruh???"
         end   
     end
     
