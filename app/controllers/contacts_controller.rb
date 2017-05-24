@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
             flash[:success] = 'Message sent homie....'
             redirect_to new_contact_path #, notice: "Successful :)"
         else
-            flash[:error] = 'What you trying to do bruh? What kind of funny business you got going on?'
+            flash[:danger] = 'What you trying to do bruh? What kind of funny business you got going on?'
             redirect_to new_contact_path  #, notice: "What you trying to do bruh???"
         end   
     end
