@@ -10,7 +10,7 @@
 
 
 <div class="navbar-wrapper">
-      <!--div class="container"-->
+      <div class="container">
 
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
@@ -22,23 +22,21 @@
 		            <span class="icon-bar"></span>                
 		          </button>
               <!--<a class="navbar-brand" href="home">Labchops</a> -->
-              <%= link_to 'SaaS', root_path, class: 'navbar-brand' %>
+              <%= link_to 'LabCHOPS', root_path, class: 'navbar-brand' %>
             </div>
     
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><%= link_to "About", "#" %></li>
-              <!--  <li class="#"><a href="https://labchops.com">Home</a></li>-->
-		            <!--<li><a href="/about">About Us</a></li>-->
-              <!--  <li><a href="/mychops">My Lab</a></li>  <li> link_to "MyChops", "#" </li>-->
-              <!--  <li><a href="/contact">Contact Us</a></li>  <li> link_to "Contact", "#" </li>-->
+                <li><%= link_to "About", about_path %></li>
+                <li><%= link_to "MyCHOPS", mychops_path %></li>
+                <li><%= link_to "Contact Us", contact_path %></li>
 		            </li>
               </ul>
             </div>
           </div>
         </nav>
 
-      <!--/div-->
+      </div>
 </div>
     
 <%= yield %>

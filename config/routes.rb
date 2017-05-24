@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get '/about' => 'pages#about'
-
+  get '/about' => 'pages#about'
+  get '/contact' => 'pages#contact'
+  get '/mychops' => 'pages#mychops'
 
   root'pages#home'
   
