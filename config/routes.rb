@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-  devise_for :users
-=======
   
   resources :contacts
->>>>>>> development
   get '/about' => 'pages#about'
   get '/mychops' => 'pages#mychops'
 
