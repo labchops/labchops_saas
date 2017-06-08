@@ -11,13 +11,13 @@ class ContactsController < ApplicationController
             email = params[:contact][:email]
             body = params[:contact][:comments]
 
-            ContactMailer.contact_email(name, email, body).deliver
+            #ContactMailer.contact_email(name, email, body).deliver
             
             flash[:success] = 'Message sent homie....'
             redirect_to new_contact_path #, notice: "Successful :)"
         else
             flash[:danger] = 'What you trying to do bruh? What kind of funny business you got going on?'
-            redirect_to new_contact_path  #, notice: "What you trying to do bruh???"
+            redirect_to new_contact_path #, notice: "What you trying to do bruh???"
         end   
     end
     
