@@ -12,10 +12,14 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170530135012) do
 =======
 ActiveRecord::Schema.define(version: 20170524192627) do
 >>>>>>> development
+=======
+ActiveRecord::Schema.define(version: 20170703165021) do
+>>>>>>> user_authentication
 
   create_table "contacts", force: true do |t|
     t.string   "name"
@@ -26,6 +30,9 @@ ActiveRecord::Schema.define(version: 20170524192627) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> user_authentication
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -44,6 +51,9 @@ ActiveRecord::Schema.define(version: 20170524192627) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
+<<<<<<< HEAD
 =======
 >>>>>>> development
+=======
+>>>>>>> user_authentication
 end
