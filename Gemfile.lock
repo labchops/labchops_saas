@@ -42,20 +42,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-<<<<<<< HEAD
-    devise (3.4.1)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      responders
-      thread_safe (~> 0.1)
-=======
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.2)
       responders
->>>>>>> user_authentication
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -148,11 +139,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.1)
   coffee-rails (~> 4.0.0)
-<<<<<<< HEAD
-  devise (= 3.4.1)
-=======
   devise (= 4.3.0)
->>>>>>> user_authentication
   font-awesome-sass (~> 4.2.0)
   jbuilder (~> 2.0)
   jquery-rails
