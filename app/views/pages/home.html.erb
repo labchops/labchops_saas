@@ -36,11 +36,11 @@
         <div class="col-md-6 portfolio-item">
             <h2>Sign In</h2>
             <h4>Basic Membership</h4> 
-            <%= link_to "Sign up Basic", new_user_registration_path(plan: @basic_plan.name), class: 'btn btn-primary' %>
+            <%= link_to "Sign up Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary' %>
             <footer><p class="post-info">Sign up for free and get basic access to the community.</p></footer>
             
             <h4>Pro Membership</h4>  
-            <%= link_to "Sign up Pro", new_user_registration_path(plan: @pro_plan.name), class: 'btn btn-success' %>
+            <%= link_to "Sign up Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success' %>
             <footer><p class="post-info">Sign up for pro account for $9.99/month and get access to the community, contact information and online tutors!</p></footer>
             
             
