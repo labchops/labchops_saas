@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170530135012) do
-=======
-ActiveRecord::Schema.define(version: 20170524192627) do
->>>>>>> development
-=======
-ActiveRecord::Schema.define(version: 20170703165021) do
->>>>>>> user_authentication
+ActiveRecord::Schema.define(version: 20170706165841) do
 
   create_table "contacts", force: true do |t|
     t.string   "name"
@@ -29,10 +21,13 @@ ActiveRecord::Schema.define(version: 20170703165021) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> user_authentication
+  create_table "plans", force: true do |t|
+    t.string   "name"
+    t.decimal  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -46,14 +41,10 @@ ActiveRecord::Schema.define(version: 20170703165021) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.float    "plan_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
-<<<<<<< HEAD
-=======
->>>>>>> development
-=======
->>>>>>> user_authentication
 end
