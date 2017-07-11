@@ -2,3 +2,57 @@
     <h1>Welcome to LabCHOPS</h1>
     <h3><!--Thank you for joining us at the Lab.--> Collaborate, study and work on various subjects over the internet from anywhere with anyone.</h3>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 portfolio-item">
+            <header><h2>Welcome</h2></header>
+            <footer><p class="post-info">Thank you for joining us in the LAB...</p></footer>
+            <table class="table table-striped">
+                    <ul class="list-group">
+					  <li class="list-group-item">Create an account</li>
+					  <li class="list-group-item">Find a study partner that you know or don’t know</li>
+					  <li class="list-group-item">Write you homework or notes as they are in the text box</li>
+					  <li class="list-group-item">Get real-time feedback.</li>
+					  <li class="list-group-item">Save and print notes to your own LabCHOPs</li>
+					  <li class="list-group-item">Come back to your notes to study or share with others.</li>
+					  <li class="list-group-item">Submit the work to teachers for your homework.</li>
+		    </ul>
+		    </table>
+		    
+		    <div class="bottom-sidebar">
+		        <article>
+		            <h2>News</h2>  
+		            <footer><p class="post-info">Stayed tuned for the latest LabNEWs</p></footer>
+                        <p>This site is strictly a tool to help you get help with your assignments. All users have full access to all site functions. If you would like to be a paid tutor, register here. For all other users, the objective here is to help. So please verify all assistance you receive on this site with your teacher or professor. This site provides an online place to join study groups who may be in a different part of town, etc. If your parents or siblings can’t help, there are friends and family who can. So join a group. </p> <br>
+                    <ul>
+    		          <li>Teachers can signup to get class notes and assignment posted and tracked</li>
+    		          <li>Tutors can join to help students who do not know individuals that can help. Tutors will be tested and monitored.</li>
+    		        </ul>
+                </article>
+		    </div>
+        </div>
+        
+        <div class="col-md-6 portfolio-item">
+            <h2>Sign Up</h2>
+            <div class="row">
+                <div class="col-md-6 col-md-4">
+                    <h4>Basic Membership</h4> 
+                    <%= link_to "Sign up Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary' %>
+                    <footer><p class="post-info">Sign up for free and get basic access to the community.</p></footer>
+                </div>
+                <div class="col-md-6 col-md-4">
+                    <h4>Pro Membership</h4>  
+                    <%= link_to "Sign up Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success' %>
+                    <footer><p class="post-info">Sign up for pro account for $9.99/month and get access to the community, contact information and online tutors!</p></footer>
+                </div>
+            </div>
+            
+            <div class="bottom-sidebar">
+                <h2>Events</h2>
+                <a class="twitter-timeline"  href="https://twitter.com/labchops/likes" data-widget-id="443528100295352320">Tweets by @Labchops</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div>
+    </div>
+</div>
