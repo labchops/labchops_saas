@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20170710185802) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.float    "plan_id"
+    t.integer  "plan_id"
     t.string   "stripe_customer_token"
   end
 
