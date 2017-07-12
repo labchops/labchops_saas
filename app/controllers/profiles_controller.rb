@@ -3,7 +3,8 @@ class ProfilesController < ApplicationController
     def new
        # Form for each user to fill out their own profile.
        @user = User.find( params[:user_id] )
-       @profile = @user.build_profile
+       #@profile = @user.build_profile  Causes the user to have to create a new Profile everytime...
+       @profile = Profile.new
     end
     
     def create
