@@ -39,7 +39,8 @@
             <% if user_signed_in? %>
                 <% if current_user.profile %>
                     <%= link_to "Edit Profile", edit_user_profile_path(current_user) %> / <%= link_to "View Profile", user_path(current_user) %>
-                <% else %>    
+                <% else %>
+                    <p>Create your profile to contribute to the community.</p>
                     <%= link_to "Create your profile", new_user_profile_path(current_user) %>
                 <% end %>
             <% else %>
