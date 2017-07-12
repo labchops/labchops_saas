@@ -48,6 +48,9 @@ gem 'stripe', '1.57.1'
 # Simple Rails app configuration. Hide secret keys
 gem 'figaro', '1.1.1'
 
+# Easy upload management for ActiveRecord
+gem 'paperclip', '4.3.7'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
