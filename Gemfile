@@ -63,3 +63,5 @@ gem 'paperclip', '4.3.7'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# A tool to parse CSS and add vendor prefixes to CSS rules
+# gem 'autoprefixer-rails', '6.3.0'
