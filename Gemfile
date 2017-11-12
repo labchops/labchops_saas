@@ -51,6 +51,9 @@ gem 'figaro', '1.1.1'
 # Easy upload management for ActiveRecord
 gem 'paperclip', '4.3.7'
 
+# CKEditor is a WYSIWYG text editor designed to simplify web content creation. It brings common word processing features directly to your web pages.
+gem 'ckeditor', '4.1.3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
