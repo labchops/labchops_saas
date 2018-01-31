@@ -34,20 +34,6 @@
     
             <div id="navbar" class="navbar-collapse collapse">
               <div class="nav navbar-nav navbar-right">
-                
-                <% if user_signed_in? %>
-                <% if current_user.profile %>
-                    <%= link_to "Edit Profile", edit_user_profile_path(current_user) %> / <%= link_to "View Profile", user_path(current_user) %>
-                <% else %>
-                    <p>Create your profile to contribute to the community.</p>
-                    <%= link_to "Create your profile", new_user_profile_path(current_user) %>
-                <% end %>
-                <% else %>
-                  
-                <% end %>
-                
-                
-                
                 <% if current_user %>
                   <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
                 <% else %>
